@@ -14,15 +14,17 @@ import edu.wpi.first.math.kinematics.SwerveModuleState;
 import edu.wpi.first.math.trajectory.TrapezoidProfile;
 import edu.wpi.first.wpilibj.Encoder;
 import com.revrobotics.CANSparkFlex;
-//import com.revrobotics.CANSparkLowLevel;
-//import com.revrobotics.CANSparkLowLevel.MotorType;
-
-
+import com.revrobotics.CANSparkLowLevel;
+import com.revrobotics.CANSparkLowLevel.MotorType;
 
 
 public class SwerveModule {
 
+    CANSparkLowLevel spark = new CANSparkLowLevel(); 
     
+    spark.someMethod();
+
+    private CANSparkFlex Motor;
 
     private static final double kWheelRadius = 2;
     private static final int kEncoderResolution = 4096;
@@ -51,6 +53,11 @@ private final ProfiledPIDController m_turningPIDController = new ProfiledPIDCont
     motor.setType(); // Set the motor type
 }
 */
+    
+
+
+
+
 
  public SwerveModule(
     int driveMotorChannel,

@@ -8,9 +8,6 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.math.filter.SlewRateLimiter;
 import edu.wpi.first.math.MathUtil;
-import com.revrobotics.CANSparkLowLevel;
-
-
 /**
  * The VM is configured to automatically run this class, and to call the functions corresponding to
  * each mode, as described in the TimedRobot documentation. If you change the name of this class or
@@ -20,8 +17,6 @@ import com.revrobotics.CANSparkLowLevel;
 public class Robot extends TimedRobot {
    private final XboxController Lilblacky = new XboxController(0);
   private final Drivetrain m_swerve = new Drivetrain();
-
-
 
 
 private final SlewRateLimiter m_xspeedLimiter = new SlewRateLimiter(3);
